@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var name: String = ""
-    @State private var tracer = ContactTracer(contacts: [])
+    @Binding var tracer: ContactTracer
+    
 
     var body: some View {
         VStack {
@@ -19,18 +20,17 @@ struct ContentView: View {
                 Button("Valider") {
                     let newContact = Contact(name: name, date: Date())
                     tracer.add(contact: newContact)
-                    print(tracer.contacts)
-                }
+                    name = ""
+                }.foregroundColor(name.isEmpty ? .red : .green)
             }.padding()
-            Text(name)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            ContentView()
-        }
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            ContentView()
+//        }
+//    }
+//}
