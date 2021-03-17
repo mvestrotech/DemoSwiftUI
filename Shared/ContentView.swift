@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var name: String = ""
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+            TextField("Contact name", text: $name)
+            Button("Valider") {
+                let newContact = Contact(name: name, date: Date())
+            }
+        }.padding()
     }
 }
 

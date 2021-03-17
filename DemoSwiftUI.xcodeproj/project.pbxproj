@@ -13,6 +13,10 @@
 		2708443F2600CA4700D17ED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708442A2600CA4500D17ED7 /* ContentView.swift */; };
 		270844402600CA4700D17ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2708442B2600CA4700D17ED7 /* Assets.xcassets */; };
 		270844412600CA4700D17ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2708442B2600CA4700D17ED7 /* Assets.xcassets */; };
+		2757310C26023AA60024D878 /* ContactTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757310B26023AA60024D878 /* ContactTracer.swift */; };
+		2757310D26023AA60024D878 /* ContactTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757310B26023AA60024D878 /* ContactTracer.swift */; };
+		2757311126023AAF0024D878 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757311026023AAF0024D878 /* Contact.swift */; };
+		2757311226023AAF0024D878 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757311026023AAF0024D878 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		270844382600CA4700D17ED7 /* DemoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2708443A2600CA4700D17ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2708443B2600CA4700D17ED7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2757310B26023AA60024D878 /* ContactTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactTracer.swift; path = "../../esgi-swift-4al2-2021/Projects/DemoSwiftUI/Shared/ContactTracer.swift"; sourceTree = "<group>"; };
+		2757311026023AAF0024D878 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = "../../esgi-swift-4al2-2021/Projects/DemoSwiftUI/Shared/Contact.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 		270844282600CA4500D17ED7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2757311026023AAF0024D878 /* Contact.swift */,
+				2757310B26023AA60024D878 /* ContactTracer.swift */,
 				270844292600CA4500D17ED7 /* DemoSwiftUIApp.swift */,
 				2708442A2600CA4500D17ED7 /* ContentView.swift */,
 				2708442B2600CA4700D17ED7 /* Assets.xcassets */,
@@ -187,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2757311126023AAF0024D878 /* Contact.swift in Sources */,
 				2708443E2600CA4700D17ED7 /* ContentView.swift in Sources */,
 				2708443C2600CA4700D17ED7 /* DemoSwiftUIApp.swift in Sources */,
+				2757310C26023AA60024D878 /* ContactTracer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2757311226023AAF0024D878 /* Contact.swift in Sources */,
 				2708443F2600CA4700D17ED7 /* ContentView.swift in Sources */,
 				2708443D2600CA4700D17ED7 /* DemoSwiftUIApp.swift in Sources */,
+				2757310D26023AA60024D878 /* ContactTracer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
